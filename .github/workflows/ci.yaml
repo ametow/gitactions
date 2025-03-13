@@ -15,4 +15,5 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "building"
+      - uses: actions/checkout@v4
+      - run: make execute
